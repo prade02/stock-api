@@ -18,7 +18,7 @@ def print_price(api_response):
         inr_price = round(usd_price/28.5,2)
         print('Gold price: {0}'.format(inr_price))
     else:
-        print('nvalid contents in response')
+        print('Invalid contents in response')
 
 def get_current_gold_price():
     api_response = requests.get(price_api_url, headers = api_header)
