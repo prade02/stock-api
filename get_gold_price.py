@@ -31,7 +31,7 @@ def print_price(api_response):
     else:
         print('Invalid contents in response')
 
-def get_current_gold_price():
+def get_current_gold_price(event,context):
     api_response = requests.get(price_api_url, headers = api_header)
     if(validate_api_response(api_response)):
         print_price(api_response)
@@ -42,7 +42,7 @@ def get_account_api_request_stats():
         print(api_response.json())
 
 #get_account_api_request_stats()
-get_current_gold_price()
+get_current_gold_price(None,None)
 
 
 
