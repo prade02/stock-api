@@ -42,7 +42,7 @@ def get_account_api_request_stats():
         print(api_response.json())
 
 #get_account_api_request_stats()
-get_current_gold_price(None,None)
+#get_current_gold_price(None,None)
 
 
 
