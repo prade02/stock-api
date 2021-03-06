@@ -14,6 +14,7 @@ def validate_api_response(api_response):
     else:
         print('Invalid API response')
 
+        
 def add_record_to_backend(inr_price):
     endpoint = '{0}?api_key={1}&field1={2}'.format(thingspeak_insert_api_url,thingspeak_write_api_key,inr_price)
     response = requests.get(endpoint)
@@ -36,10 +37,12 @@ def get_current_gold_price(event,context):
     if(validate_api_response(api_response)):
         print_price(api_response)
 
+        
 def get_account_api_request_stats():
     api_response = requests.get(account_stat_api_url, headers = api_header)
     if(validate_api_response(api_response)):
         print(api_response.json())
+
 
 #get_account_api_request_stats()
 #get_current_gold_price(None,None)
