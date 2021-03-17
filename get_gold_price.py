@@ -41,8 +41,8 @@ def get_account_api_request_stats():
     if(validate_api_response(api_response)):
         print(api_response.json())
 
-#get_account_api_request_stats()
-get_current_gold_price(None,None)
+get_account_api_request_stats()
+#get_current_gold_price(None,None)
 
 
 
