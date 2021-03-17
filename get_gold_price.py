@@ -43,12 +43,7 @@ def get_account_api_request_stats():
     if(validate_api_response(api_response)):
         print(api_response.json())
 
-<<<<<<< HEAD
 get_account_api_request_stats()
-=======
-
-#get_account_api_request_stats()
->>>>>>> 9fdb2aafd59518d301c5f8bfdb4d992db27f354b
 #get_current_gold_price(None,None)
 
 
