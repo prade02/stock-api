@@ -19,4 +19,4 @@ def put_item(request_id, gold_price):
 
 
 # put_item('dfadf', "1000")
-print(get_current_time())
+# print(get_current_time())
