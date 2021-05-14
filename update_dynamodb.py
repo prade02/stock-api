@@ -1,9 +1,11 @@
 import boto3
 import datetime
+import pytz
 
 
 def get_current_time():
-    now = datetime.datetime.now()
+    tz = pytz.timezone('Asia/Kolkata')
+    now = datetime.datetime.now(tz)
     return now.strftime("%Y-%m-%dT%H:%M:%S")
 
 
@@ -17,3 +19,4 @@ def put_item(request_id, gold_price):
 
 
 # put_item('dfadf', "1000")
+print(get_current_time())
